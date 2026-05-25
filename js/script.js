@@ -321,9 +321,11 @@ var goldenrodBasementItems = [84, 85, 86, 87, 88, 89, 90, 91, 92, 93];
 var darkCaveItems = [151, 152, 153, 154, 155, 156];
 var hideoutItems = [64, 65, 66, 67, 68, 69,70, 71, 72, 73];
 var mtMortarWaterfallLockedItems = [97, 99, 101, 103, 105, 106, 107, 108, 109, 110, 253];
-var whirlpoolWaterfallLockedLocations = ["WHIRL ISLANDS",
+var whirlIslandsLockedLocations = ["WHIRL ISLANDS"];
+var dragonsDenLockedLocations = ["DRAGON'S DEN"];
+
+var whirlpoolWaterfallLockedLocations = [
 "SILVER CAVE",
-"DRAGON'S DEN",
 "DIGLETT'S CAVE",
 "KANTO UNDERGROUND",
 "ROCK TUNNEL",
@@ -532,15 +534,17 @@ function toggleReportDisplay() {
 	const obtainable = document.getElementById('obtainableRow'); 
 	const spoilerfreemode = document.getElementById('spoilerfreemode'); 
 	if(report.style.display == 'none'){
-		if(spoilerfreemode.checked)
+		if(spoilerfreemode.checked) {
 			obtainable.style.display = 'none';
+			document.getElementById('informationUnobtainableCell').style.display = 'none';
+		}
 		options.style.display = 'none';
         report.style.display = 'block';
     }
     else {
         options.style.display = 'block';
         report.style.display = 'none';
-        report.innerHTML = '<h2> Report </h2>\n<button type="button" onclick="toggleReportDisplay()">Go Back</button>\n<br><br>\n<table>\n<tr>\n<td>\n<h3> Goals Not Obtainable: </h3>\n<ul id="unobtainable">\n</ul>\n<td><h3> Information Not Obtainable: </h3>\n<ul id="informationunobtainable">\n</ul>\n</td>\n</tr>\n<tr id="obtainableRow">\n<td>\n<h3 class="obtainable"> Goals Obtainable: </h3>\n<ul id="obtainable" class="obtainable">\n</ul>\n</td>\n<td>\n<h3 class="obtainable"> Information Obtainable: </h3>\n<ul id="informationobtainable" class="obtainable">\n</ul>\n</td>\n</tr>\n</table>\n<br><button type="button" onclick="toggleReportDisplay()">Go Back</button>'
+        report.innerHTML = '<h2> Report </h2>\n<button type="button" onclick="toggleReportDisplay()">Go Back</button>\n<br><br>\n<table>\n<tr>\n<td>\n<h3> Goals Not Obtainable: </h3>\n<ul id="unobtainable">\n</ul>\n</td>\n<td id="informationUnobtainableCell"><h3> Information Not Obtainable: </h3>\n<ul id="informationunobtainable">\n</ul>\n</td>\n</tr>\n<tr id="obtainableRow">\n<td>\n<h3 class="obtainable"> Goals Obtainable: </h3>\n<ul id="obtainable" class="obtainable">\n</ul>\n</td>\n<td>\n<h3 class="obtainable"> Information Obtainable: </h3>\n<ul id="informationobtainable" class="obtainable">\n</ul>\n</td>\n</tr>\n</table>\n<br><button type="button" onclick="toggleReportDisplay()">Go Back</button>'
         
     }
 }	
@@ -1206,6 +1210,12 @@ function generateDisallowedItemsArray(){
 	if(!document.getElementById("waterfallwhirlpoolitems").checked) {
 		disallowedItemsArray = disallowedItemsArray.concat(mtMortarWaterfallLockedItems);
 		disallowedItemsArray = disallowedItemsArray.concat(whirlpoolWaterfallLockedLocations);
+	}
+	if(!document.getElementById("whirlislandsitems").checked) {
+		disallowedItemsArray = disallowedItemsArray.concat(whirlIslandsLockedLocations);
+	}
+	if(!document.getElementById("dragonsdenitems").checked) {
+		disallowedItemsArray = disallowedItemsArray.concat(dragonsDenLockedLocations);
 	}
 	if(!document.getElementById("mortaritems").checked) disallowedItemsArray = disallowedItemsArray.concat(["MT.MORTAR", "MT.MORTAR (STRENGTH AND/OR WATERFALL-LOCKED)"]);
 	if(!document.getElementById("darkcaveitems").checked) disallowedItemsArray = disallowedItemsArray.concat(darkCaveItems);

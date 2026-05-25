@@ -321,9 +321,11 @@ var goldenrodBasementItems = [84, 85, 86, 87, 88, 89, 90, 91, 92, 93];
 var darkCaveItems = [151, 152, 153, 154, 155, 156];
 var hideoutItems = [64, 65, 66, 67, 68, 69,70, 71, 72, 73];
 var mtMortarWaterfallLockedItems = [97, 99, 101, 103, 105, 106, 107, 108, 109, 110, 253];
-var whirlpoolWaterfallLockedLocations = ["WHIRL ISLANDS",
+var whirlIslandsLockedLocations = ["WHIRL ISLANDS"];
+var dragonsDenLockedLocations = ["DRAGON'S DEN"];
+
+var whirlpoolWaterfallLockedLocations = [
 "SILVER CAVE",
-"DRAGON'S DEN",
 "DIGLETT'S CAVE",
 "KANTO UNDERGROUND",
 "ROCK TUNNEL",
@@ -1208,6 +1210,12 @@ function generateDisallowedItemsArray(){
 	if(!document.getElementById("waterfallwhirlpoolitems").checked) {
 		disallowedItemsArray = disallowedItemsArray.concat(mtMortarWaterfallLockedItems);
 		disallowedItemsArray = disallowedItemsArray.concat(whirlpoolWaterfallLockedLocations);
+	}
+	if(!document.getElementById("whirlislandsitems").checked) {
+		disallowedItemsArray = disallowedItemsArray.concat(whirlIslandsLockedLocations);
+	}
+	if(!document.getElementById("dragonsdenitems").checked) {
+		disallowedItemsArray = disallowedItemsArray.concat(dragonsDenLockedLocations);
 	}
 	if(!document.getElementById("mortaritems").checked) disallowedItemsArray = disallowedItemsArray.concat(["MT.MORTAR", "MT.MORTAR (STRENGTH AND/OR WATERFALL-LOCKED)"]);
 	if(!document.getElementById("darkcaveitems").checked) disallowedItemsArray = disallowedItemsArray.concat(darkCaveItems);

@@ -532,15 +532,17 @@ function toggleReportDisplay() {
 	const obtainable = document.getElementById('obtainableRow'); 
 	const spoilerfreemode = document.getElementById('spoilerfreemode'); 
 	if(report.style.display == 'none'){
-		if(spoilerfreemode.checked)
+		if(spoilerfreemode.checked) {
 			obtainable.style.display = 'none';
+			document.getElementById('informationUnobtainableCell').style.display = 'none';
+		}
 		options.style.display = 'none';
         report.style.display = 'block';
     }
     else {
         options.style.display = 'block';
         report.style.display = 'none';
-        report.innerHTML = '<h2> Report </h2>\n<button type="button" onclick="toggleReportDisplay()">Go Back</button>\n<br><br>\n<table>\n<tr>\n<td>\n<h3> Goals Not Obtainable: </h3>\n<ul id="unobtainable">\n</ul>\n<td><h3> Information Not Obtainable: </h3>\n<ul id="informationunobtainable">\n</ul>\n</td>\n</tr>\n<tr id="obtainableRow">\n<td>\n<h3 class="obtainable"> Goals Obtainable: </h3>\n<ul id="obtainable" class="obtainable">\n</ul>\n</td>\n<td>\n<h3 class="obtainable"> Information Obtainable: </h3>\n<ul id="informationobtainable" class="obtainable">\n</ul>\n</td>\n</tr>\n</table>\n<br><button type="button" onclick="toggleReportDisplay()">Go Back</button>'
+        report.innerHTML = '<h2> Report </h2>\n<button type="button" onclick="toggleReportDisplay()">Go Back</button>\n<br><br>\n<table>\n<tr>\n<td>\n<h3> Goals Not Obtainable: </h3>\n<ul id="unobtainable">\n</ul>\n</td>\n<td id="informationUnobtainableCell"><h3> Information Not Obtainable: </h3>\n<ul id="informationunobtainable">\n</ul>\n</td>\n</tr>\n<tr id="obtainableRow">\n<td>\n<h3 class="obtainable"> Goals Obtainable: </h3>\n<ul id="obtainable" class="obtainable">\n</ul>\n</td>\n<td>\n<h3 class="obtainable"> Information Obtainable: </h3>\n<ul id="informationobtainable" class="obtainable">\n</ul>\n</td>\n</tr>\n</table>\n<br><button type="button" onclick="toggleReportDisplay()">Go Back</button>'
         
     }
 }	

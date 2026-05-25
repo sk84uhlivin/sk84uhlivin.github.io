@@ -252,7 +252,7 @@ var statics = {
 
 var pokeGoals = {
 	"Trade a Pokémon": [["ABRA", "BELLSPROUT", "KRABBY", "DRAGONAIR"]],
-	"2 Different Baby Pokémon": [["PICHU", "CLEFFA", "IGGLYBUFF", "TOGEPI", "TYROGUE", "SMOOCHUM", "ELEKID", "MAGBY"]],
+	"Obtain a Baby Pokémon": [["PICHU", "CLEFFA", "IGGLYBUFF", "TOGEPI", "TYROGUE", "SMOOCHUM", "ELEKID", "MAGBY"]],
 	"2 Different Eeveelutions": [["JOLTEON", "FLAREON", "VAPOREON", "ESPEON", "UMBREON"], ["EEVEE"]],
 	"3 Different Genderless Pokémon": [["MAGNEMITE", "MAGNETON", "VOLTORB", "ELECTRODE", "STARYU", "STARMIE", "PORYGON", "PORYGON2",
 		"DITTO", "ARTICUNO", "ZAPDOS", "MOLTRES", "MEWTWO", "MEW", "UNOWN", "RAIKOU", "ENTEI", "SUICUNE", "LUGIA", "HO-OH", "CELEBI"], ["STARYU"]],
@@ -265,7 +265,7 @@ var pokeGoals = {
 	"A Pokémon with a Hisui Variant": [["GROWLITHE", "VOLTORB", "ELECTRODE", "QWILFISH", "ARCANINE", "SNEASEL", "TYPHLOSION"]],
 	"2 Pokémon with a Galar Variant": [["MEOWTH", "PERSIAN", "PONYTA", "RAPIDASH", "SLOWPOKE", "SLOWBRO", "SLOWKING", "FARFETCH'D", "WEEZING", "MR.MIME", "CORSOLA", "ARTICUNO", "ZAPDOS", "MOLTRES"]],
 	"3 Pokémon with a Alolan Variant": [["RATTATA", "RATICATE", "RAICHU", "SANDSHREW", "SANDSLASH", "VULPIX", "NINETALES", "DIGLETT", "DUGTRIO", "MEOWTH", "PERSIAN", "GEODUDE", "GRAVELER", "GOLEM", "GRIMER", "MUK", "EXEGGUTOR", "MAROWAK"], ["PIKACHU", "EXEGGCUTE"]],
-	"Obtain any Legendary Bird": [["ARTICUNO", "ZAPDOS", "MOLTRES", "HO-OH", "LUGIA"]],
+	"Obtain a Legendary Bird": [["ARTICUNO", "ZAPDOS", "MOLTRES", "HO-OH", "LUGIA"]],
 	"Aerodactyl, Kabuto, or Omanyte": [["AERODACTYL", "KABUTO", "OMANYTE"]],
 	"Aipom, Heracross, or Pinsir": [["AIPOM", "HERACROSS", "PINSIR"]],
 	"Arbok or Xatu": [["ARBOK", "XATU"], ["EKANS", "NATU"]],

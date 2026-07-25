@@ -351,7 +351,7 @@ var whirlpoolWaterfallLockedLocations = [
 "ROUTE 27",
 "SAFFRON CITY"];
 
-var mandatoryTrainers = [1, 2, 3, 4, 7, 42, 79, 80, 98, 189, 190, 213, 400, 402, 403, 405, 478, 479, 486, 511, 512, 513, 514, 515, 536];
+var mandatoryTrainers = [1, 2, 3, 4, 7, 42, 79, 80, 98, 189, 190, 217, 400, 402, 403, 405, 478, 479, 486, 511, 512, 513, 514, 515, 536];
 
 var azaleaLeftSide = [237, 516];
 var azaleaRightSide = [236, 519];

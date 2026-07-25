@@ -470,6 +470,7 @@ var trainerInfo = {
 	317: ["SAILOR TERRELL", "LIGHTHOUSE", "Lighthouse trainer"],
 	318: ["SAILOR KENT", "LIGHTHOUSE", "Lighthouse trainer"],
 	319: ["SAILOR ERNEST", "LIGHTHOUSE", "Lighthouse trainer"],
+	324: ["SAILOR HARRY", "ROUTE 38", "Route 38 trainer"],
 	341: ["SUPER NERD MARKUS", "MT.MORTAR", "Mt. Mortar trainer"],
 	351: ["HIKER RUSSELL", "UNION CAVE", "hiker trainer"],
 	352: ["HIKER PHILLIP", "UNION CAVE", "hiker trainer"],

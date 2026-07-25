@@ -434,7 +434,7 @@ var trainerInfo = {
 	179: ["POKÉMANIAC BRENT", "ROUTE 43", "pokémaniac trainer"],
 	180: ["POKÉMANIAC RON", "ROUTE 43", "pokémaniac trainer"],
 	184: ["POKÉMANIAC ISAAC", "GOLDENROD TUNNEL", "pokémaniac trainer"],
-	185: ["POKÉMANIAC DONALD", "GOLDENROD TUNNEL", "pokémaniac trainer"],
+	185: ["POKÉMANIAC DONALD", "GOLDENROD TUNNEL", "pokémaniac trainer/coin case trainer"],
 	186: ["POKÉMANIAC ZACH", "ROUTE 44", "Route 44 trainer"],
 	188: ["POKÉMANIAC MILLER", "MT. MORTAR", "Pokémaniac trainer"],
 	189: ["ROCKET GRUNT", "SLOWPOKE WELL", "mandatory trainer"],

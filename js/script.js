@@ -424,7 +424,7 @@ var trainerInfo = {
 	188: ["POKÉMANIAC MILLER", "MT. MORTAR", "Pokémaniac trainer"],
 	189: ["ROCKET GRUNT", "SLOWPOKE WELL", "mandatory trainer"],
 	190: ["ROCKET GRUNT", "SLOWPOKE WELL", "mandatory trainer"],
-	213: ["ROCKET GRUNT", "SLOWPOKE WELL", "mandatory trainer"],
+	217: ["ROCKET GRUNT", "SLOWPOKE WELL", "mandatory trainer"],
 	220: ["GENTLEMAN PRESTON", "LIGHTHOUSE", "Lighthouse/Mineral Badge trainer"],
 	224: ["GENTLEMAN ALFRED", "LIGHTHOUSE", "Lighthouse/Mineral Badge trainer"],
 	225: ["SKIER ROXANNE", "MAHOGANY CITY GYM", "Glacier Badge trainer"],

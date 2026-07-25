@@ -358,7 +358,7 @@ var azaleaRightSide = [236, 519];
 var route39male = [497];
 var route39female = [527];
 
-var route32trainers = [43, 44, 91, 250, 251, 254, 424];
+var route32trainers = [43, 44, 91, 250, 251, 254, 424, 450];
 var route35trainers = [81, 238, 390, 393, 426, 427, 452, 453, 535];
 var route38trainers = [64, 83, 107, 172, 173, 324];
 var route44trainers = [85, 134, 151, 186, 259, 260, 419];
@@ -496,6 +496,7 @@ var trainerInfo = {
 	426: ["PICNICKER BROOKE", "ROUTE 35", "Route 35 trainer"],
 	427: ["PICNICKER KIM", "ROUTE 35", "Route 35 trainer"],
 	433: ["PICKNICKER ERIN", "ROUTE 46", "Route 46 trainer"],
+	450: ["CAMPER ROLAND", "ROUTE 32", "Route 32 trainer"],
 	451: ["CAMPER TODD", "ROUTE 34", "Phonebook trainer"],
 	452: ["CAMPER IVAN", "ROUTE 35", "Route 35 trainer"],
 	453: ["CAMPER ELLIOT", "ROUTE 35", "Route 35 trainer"],
